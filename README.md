@@ -70,4 +70,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ### CONTRIBUTORS
-Danh Voung
+Joseph Alvarenga Beech
+Danh Vuong
