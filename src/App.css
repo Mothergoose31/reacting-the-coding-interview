@@ -1,6 +1,5 @@
-.App {
-  text-align: center;
-}
+@import url('./components/navbar/NavBar.css');
+
 
 .App-logo {
   height: 40vmin;
