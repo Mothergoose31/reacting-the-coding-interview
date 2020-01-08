@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const codeDisplay = ()=>{
+const CodeDisplay = ()=>{
     return(
         <div>
-            Hello Code Display
+            Hello Code Display 
         </div>
     )
 }
 
-export default codeDisplay;
+export default CodeDisplay;

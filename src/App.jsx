@@ -6,12 +6,17 @@ import SideMenu from "./components/sideMenu/SideMenu";
 
 function App() {
   const [isLoading,setLoading] = useState(true) // set initial loading state to true 
+  const [render,setRender] = useState('none')
   
-  useEffect(()=>{
-    setTimeout(()=>{
-      setLoading(false)
-    },2000) //set splashing screen time on mount to 2s, can disable for development
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  //     setLoading(false)
+  //   },2000) //set splashing screen time on mount to 2s, can disable for development
+  // },[]);
+  
+  const handleChange = data => {
+    setRender(data)
+  }
   
   return (
   <div id="App">

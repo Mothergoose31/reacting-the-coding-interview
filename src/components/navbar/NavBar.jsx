@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+import SplashScreen from '../splashScreen/SplashScreen';
+import IsUnique from '../problems/isUnique/IsUnique'
 
 export default class NavBar extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
         return (
             <div>

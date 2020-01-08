@@ -1,11 +1,13 @@
 import React from 'react';
-import codeDisplay from '../../codeDisplay/codeDisplay'
+import CodeDisplay from '../../codeDisplay/CodeDisplay'
 
-const isUnique = ()=>{
+const IsUnique = ()=>{
     return(
         <div>
             Hello Problems
-            <codeDisplay/>
+            <CodeDisplay/>
         </div>
     )
 }
+
+export default IsUnique
