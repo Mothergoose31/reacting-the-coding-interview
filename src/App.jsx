@@ -1,11 +1,13 @@
 import React, {useState,useEffect} from 'react';
-import NavBar from './components/navbar/NavBar'
+import NavBar from './components/navbar/NavBar';
+import SideMenu from './components/sideMenu/SideMenu';
 import './App.css';
 import SplashScreen from './components/splashScreen/SplashScreen'
 
 
 function App() {
   const [isLoading,setLoading] = useState(true) // set initial loading state to true 
+  const [isSideMenu,setSideMenu] = useState(true)
   const [render,setRender] = useState('none')
   
   useEffect(()=>{
@@ -17,21 +19,26 @@ function App() {
   const handleChange = data => {
     setRender(data)
   }
+
+  const toggleSideMenu = ()=>{
+    setSideMenu(isSideMenu === true ? false : true )
+  }
   
   return (
   <div id="App">
-  {isLoading? <SplashScreen/> : 
+ 
     <>           
     {/* // if loading, display splash screen, else display app */}
       
       <div id ="page-wrap">
-        <NavBar/>
+        <NavBar toggleSideMenu={toggleSideMenu}/>
+        <SideMenu isSideMenu={isSideMenu}/>
         <div>
           <h1>Hello</h1>
         </div>
       </div>  
     </>         
-  }
+  
   </div>
   )
 }

@@ -75,3 +75,13 @@
   /* Styling of overlay */
  
   
+  .sideMenu{
+    width: 20%;
+    min-height: 100vh;
+    border: 1px solid black;
+    transition: all .5s ease-in-out;
+  }
+
+  .hidden{
+    transform: translateY(-100%);
+  }
