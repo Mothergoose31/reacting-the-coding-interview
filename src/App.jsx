@@ -1,9 +1,10 @@
 import React, {useState,useEffect} from 'react';
 import NavBar from './components/navbar/NavBar';
 import SideMenu from './components/sideMenu/SideMenu';
-import './App.css';
 import SplashScreen from './components/splashScreen/SplashScreen'
 import IsUnique from './components/problems/isUnique/IsUnique';
+import MenuBookIcon from '@material-ui/icons/MenuBook'
+import './App.css';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
   //items that are rendered in the side menu
   const items = [
-    { name: 'home', label: 'Home' },
+    { name: 'home', label: 'Home',Icon: MenuBookIcon },
     { name: 'chaper 1', label: 'Chapter 1' },
     { name: 'chapter 2', label: 'Chapter 2' },
     { name: 'chaper 3', label: 'Chapter 3' },
