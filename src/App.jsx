@@ -5,10 +5,22 @@ import './App.css';
 import SplashScreen from './components/splashScreen/SplashScreen'
 import IsUnique from './components/problems/isUnique/IsUnique';
 
+
 function App() {
   const [isLoading,setLoading] = useState(true) // set initial loading state to true 
   const [isSideMenu,setSideMenu] = useState(true)
   const [render,setRender] = useState('none')
+
+  const items = [
+    { name: 'home', label: 'Home' },
+    { name: 'chaper 1', label: 'Chapter 1' },
+    { name: 'chapter 2', label: 'Chapter 2' },
+    { name: 'chaper 3', label: 'Chapter 3' },
+    { name: 'chapter 4', label: 'Chapter 4' },
+    { name: 'chaper 8', label: 'Chapter 8' },
+    { name: 'chapter 10', label: 'Chapter 10' },
+  ]
+
   
   useEffect(()=>{
     setTimeout(()=>{
@@ -33,7 +45,7 @@ function App() {
       <div id="page-wrap">
         <NavBar toggleSideMenu={toggleSideMenu}/>
         
-        <SideMenu isSideMenu={isSideMenu}/>
+        <SideMenu isSideMenu={isSideMenu} items={items}/>
         <IsUnique/>
       </div>  
     </>         
