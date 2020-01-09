@@ -39,13 +39,13 @@ function App() {
   }
   
   return (
-  <div id="App">
- 
-    <>           
-    {/* // if loading, display splash screen, else display app */}
-      
-      <div id="page-wrap">
+  <div className="App">
         <NavBar toggleSideMenu={toggleSideMenu}/>
+        <div className='main'>
+          <SideMenu isSideMenu={isSideMenu}/>
+          <IsUnique isSideMenu={isSideMenu}/>
+        </div>
+       
         
         <SideMenu isSideMenu={isSideMenu} items={items}/>
         <IsUnique/>
