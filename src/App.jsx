@@ -11,6 +11,7 @@ function App() {
   const [isSideMenu,setSideMenu] = useState(true)
   const [render,setRender] = useState('none')
 
+  //items that are rendered in the side menu
   const items = [
     { name: 'home', label: 'Home' },
     { name: 'chaper 1', label: 'Chapter 1' },

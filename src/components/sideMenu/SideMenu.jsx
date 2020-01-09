@@ -8,13 +8,13 @@ const SideMenu = ({isSideMenu,items})=>{
         <div className={isSideMenu ? 'sideMenu' : 'sideMenu hidden'}>
             <div className="SideMenu">
         <List disablePadding dense>
-          {items.map(({ label, name, ...rest }) => (
+            {items.map(({ label, name, ...rest }) => (
             <ListItem key={name} button {...rest}>
-              <ListItemText>{label}</ListItemText>
+                <ListItemText>{label}</ListItemText>
             </ListItem>
-          ))}
+            ))}
         </List>
-      </div>
+        </div>
         </div>
     )
 }
