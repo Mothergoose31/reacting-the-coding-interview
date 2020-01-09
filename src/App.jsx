@@ -41,16 +41,9 @@ function App() {
   <div className="App">
         <NavBar toggleSideMenu={toggleSideMenu}/>
         <div className='main'>
-          <SideMenu isSideMenu={isSideMenu}/>
+          <SideMenu isSideMenu={isSideMenu} items={items}/>
           <IsUnique isSideMenu={isSideMenu}/>
         </div>
-       
-        
-        <SideMenu isSideMenu={isSideMenu} items={items}/>
-        <IsUnique/>
-      </div>  
-    </>         
-  
   </div>
   )
 }
