@@ -3,3 +3,11 @@
 
 
 
+.problems-container{
+    position: absolute;
+    min-width: 85%;
+    height: calc(100% - 34px);
+    bottom: 0;
+    right: 0;
+    background-color: aqua;
+}

@@ -3,7 +3,7 @@ import NavBar from './components/navbar/NavBar';
 import SideMenu from './components/sideMenu/SideMenu';
 import './App.css';
 import SplashScreen from './components/splashScreen/SplashScreen'
-
+import IsUnique from './components/problems/isUnique/IsUnique';
 
 function App() {
   const [isLoading,setLoading] = useState(true) // set initial loading state to true 
@@ -30,12 +30,11 @@ function App() {
     <>           
     {/* // if loading, display splash screen, else display app */}
       
-      <div id ="page-wrap">
+      <div id="page-wrap">
         <NavBar toggleSideMenu={toggleSideMenu}/>
+        
         <SideMenu isSideMenu={isSideMenu}/>
-        <div>
-          <h1>Hello</h1>
-        </div>
+        <IsUnique/>
       </div>  
     </>         
   
