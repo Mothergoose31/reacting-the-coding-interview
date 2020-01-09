@@ -10,7 +10,7 @@ export default class NavBar extends Component {
         return (
             <div>
                 <ul id="nav">
-                    
+                    <button onClick={this.props.toggleSideMenu}>Toggle Menu</button>
                     <li><a href="#">Dank Logo</a></li>
                     <li><a href="#"> About</a></li>
                     
