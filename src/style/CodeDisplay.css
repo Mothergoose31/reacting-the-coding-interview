@@ -1,0 +1,8 @@
+.code-display{
+    height: 100%;
+    right: 0;
+    width: 40%;
+    text-align: left;
+    overflow: scroll;
+    margin: 0;
+}

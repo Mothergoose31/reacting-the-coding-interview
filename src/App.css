@@ -1,13 +1,12 @@
 @import url('./style/NavBar.css');
 @import url('./style/SideMenu.css');
+@import url('./style/Problems.css');
 
-
-
-.problems-container{
-    position: absolute;
-    min-width: 85%;
-    height: calc(100% - 34px);
-    bottom: 0;
-    right: 0;
-    background-color: aqua;
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    height: 100vh;
 }
