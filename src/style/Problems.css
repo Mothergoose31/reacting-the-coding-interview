@@ -1,9 +1,9 @@
 
 .problems-container{
     height: 100%;
-    border: 1px solid black;
     display: flex;
     text-align: center;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
     width: 100%;
     margin-left: 200px;
     transition: all .5s ease-in-out;

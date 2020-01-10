@@ -1,7 +1,8 @@
 .sideMenu{
     width: 200px;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:#E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
     transition: all .5s ease-in-out;
     position: absolute;
   }

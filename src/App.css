@@ -5,6 +5,7 @@
 .App{
     display: flex;
     flex-direction: column;
+    background-color:#E0E5EC;
 }
 .main{
     display: flex;
