@@ -29,7 +29,7 @@ function App() {
     },2000) //set splashing screen time on mount to 2s, can disable for development
   },[]);
   
-  const handleChange = data => {
+  function handleChange(data)  {
     setRender(data)
   }
 
