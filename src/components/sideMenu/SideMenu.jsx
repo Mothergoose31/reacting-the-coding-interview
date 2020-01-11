@@ -1,7 +1,6 @@
 import React from 'react';
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from '@material-ui/core/ListItemText'
+import {List,ListItem,ListItemText} from "@material-ui/core/";
+
 
 const SideMenu = ({isSideMenu,items})=>{
     return(
@@ -20,5 +19,6 @@ const SideMenu = ({isSideMenu,items})=>{
 }
 
 export default SideMenu
+
 
 
