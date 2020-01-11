@@ -24,7 +24,7 @@ const IsUnique = ({isSideMenu})=>{
         return true; // if no match, return true
     };
         
-    const handleCheckUnique = string => {
+    function handleCheckUnique(string)  {
         let result = checkUnique(inputVal);
         setIsUnique(result ? true : false )
     }
