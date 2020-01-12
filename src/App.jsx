@@ -3,13 +3,13 @@ import NavBar from './components/navbar/NavBar';
 import SideMenu from './components/sideMenu/SideMenu';
 import SplashScreen from './components/splashScreen/SplashScreen'
 import IsUnique from './components/problems/isUnique/IsUnique';
-import HomeIcon from "@material-ui/icons/Home";
+import {HomeIcon} from "@material-ui/icons/Home";
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import './App.css';
 
 function onClick(e, item) {
   window.alert(JSON.stringify(item, null, 2));
-  console.log(item.name)
+  
 }
 
 
