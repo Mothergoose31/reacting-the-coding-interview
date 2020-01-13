@@ -80,6 +80,7 @@ const IsUnique = ()=>{
             <div className='problem-display'>
                 <div className='problem-header'>
                     isUnique
+                    <hr/>
                 </div>
                 <div className='problem-detail'>
                     <p>Enter a string to check if a string is Unique</p>
