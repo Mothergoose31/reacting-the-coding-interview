@@ -5,6 +5,7 @@ import SplashScreen from './components/splashScreen/SplashScreen'
 import IsUnique from './components/problems/isUnique/IsUnique';
 import {HomeIcon} from "@material-ui/icons/Home";
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import Urlify from './components/problems/Urlify/Urlify'
 import './App.css';
 
 function onClick(e, item) {
@@ -53,7 +54,8 @@ function App() {
         <NavBar toggleSideMenu={toggleSideMenu}/>
         <div className='main'>
           <SideMenu isSideMenu={isSideMenu} items={items}/>
-          <IsUnique isSideMenu={isSideMenu}/>
+          {/* <IsUnique isSideMenu={isSideMenu}/> */}
+          <Urlify isSideMenu={isSideMenu}/>
         </div>
   </div>
   )
